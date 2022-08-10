@@ -5,6 +5,14 @@ class BooksController < ApplicationController
     @books = Book.all
   end
 
+  def create
+    @book = Book.new(book_params)
+    if @book.save
+    else
+      render :index
+    end
+  end
+
   def show
     @book = Book.find(params[:id])
   end
