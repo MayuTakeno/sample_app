@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div id="book-title">
-      <%= render 'book_index', books: @books %>
+      <%= render partial: 'book_index', collection: @books, as: :book %>
     </div>
   </div>
 </div>
