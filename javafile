@@ -1,8 +1,28 @@
-内部クラス
+内部クラス⇨クラスの中にあるクラス
 
+クラスの中に定義するクラス
+
+*sample1
 public class A{
   public class B{
-  public class C
+    public class C{
+    }
+  }
+}
 
+*sample2(内部クラス)
+public class A{
+
+}
+class B{
+
+}
+
+内部クラスの使い方
+
+※sample
+package inner_class_sample;
+public class Outer{
+  public class Inner{
   }
 }
